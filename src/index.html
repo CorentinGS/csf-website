@@ -2,82 +2,89 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Commandante</title>
     <link href="/dist/output.css" rel="stylesheet">
 </head>
 <body>
-    <div class="bg-indigo-900 relative overflow-hidden h-screen">
-        <img src="./images/background.webp" class="absolute h-full w-full object-cover" alt="background image"/>
-        <div class="inset-0 bg-black opacity-25 absolute">
-        </div>
-        <div class="container mx-auto px-6 md:px-12 relative z-10 flex items-center py-32 xl:py-40">
-            <div class="lg:w-3/5 xl:w-2/5 flex flex-col items-start relative z-10">
-                <h1 class="font-bold uppercase text-5xl sm:text-6xl text-yellow-400">
-                    Commandante
-                </h1>
-                <h2 class="font-bold text-6xl sm:text-7xl text-white leading-tight mt-4">
-                    La station météo
-                </h2>
-                <span class="font-bold uppercase text-yellow-400">
+<div class="bg-indigo-900 relative overflow-hidden h-screen">
+    <img alt="background image" class="absolute h-full w-full object-cover" src="./images/background.webp"/>
+    <div class="inset-0 bg-black opacity-25 absolute">
+    </div>
+    <div class="container mx-auto px-6 md:px-12 relative z-10 flex items-center py-32 xl:py-40">
+        <div class="lg:w-3/5 xl:w-2/5 flex flex-col items-start relative z-10">
+            <h1 class="font-bold uppercase text-5xl sm:text-6xl text-yellow-400">
+                Commandante
+            </h1>
+            <h2 class="font-bold text-6xl sm:text-7xl text-white leading-tight mt-4">
+                La station météo
+            </h2>
+            <span class="font-bold uppercase text-yellow-400">
                       made in Valrose
                 </span>
-                <a href="#data"
-                   class="block bg-white hover:bg-gray-100 py-3 px-4 rounded-lg text-lg text-gray-800 font-bold uppercase mt-10">
-                     Découvrir !
-
-                </a>
-            </div>
+            <a class="block bg-white hover:bg-gray-100 py-3 px-4 rounded-lg text-lg text-gray-800 font-bold uppercase mt-10"
+               href="#data">
+                Découvrir !
+            </a>
         </div>
     </div>
-    <section id="data" class="text-gray-600 body-font h-screen">
-        <div class="container px-5 py-24 mx-auto">
-            <div class="flex flex-col text-center w-full mb-20">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Météo en temps réel</h1>
-            </div>
-            <div class="flex flex-wrap -m-4 text-center">
-                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                    <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="text-indigo-500 w-12 h-12 mb-3 inline-block"  fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                            </svg>
-                        <h2 class="title-font font-medium text-3xl text-gray-900">27°C</h2>
-                        <p class="leading-relaxed">Température</p>
-                    </div>
-                </div>
-                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                    <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-                                <path d="M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 16h-8z" />
-                        </svg>
-                        <h2 class="title-font font-medium text-3xl text-gray-900">33%</h2>
-                        <p class="leading-relaxed">Humidité</p>
-                    </div>
-                </div>
-                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                    <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                        </svg>
-                        <h2 class="title-font font-medium text-3xl text-gray-900">1024</h2>
-                        <p class="leading-relaxed">Pression</p>
-                    </div>
-                </div>
-                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                    <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-indigo-500 w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                            </svg>
-                        <h2 class="title-font font-medium text-3xl text-gray-900">510</h2>
-                        <p class="leading-relaxed">Luminosité</p>
-                    </div>
-                </div>
-            </div>
-                <div class="aspect-w-16 aspect-h-9 flex mt-10 justify-center">
-                    <iframe src="https://www.youtube.com/embed/5qap5aO4i9A" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+</div>
+<section class="text-gray-600 body-font h-screen" id="data">
+    <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Météo en temps réel</h1>
         </div>
-
-    </section>
+        <div class="flex flex-wrap -m-4 text-center">
+            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <svg class="text-indigo-500 w-12 h-12 mb-3 inline-block" fill="none"
+                         stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                    <h2 class="title-font font-medium text-3xl text-gray-900">27°C</h2>
+                    <p class="leading-relaxed">Température</p>
+                </div>
+            </div>
+            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <svg class="text-indigo-500 w-12 h-12 mb-3 inline-block" fill="none" stroke="currentColor" stroke-linecap="round"
+                         stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M5.5 16a3.5 3.5 0 01-.369-6.98 4 4 0 117.753-1.977A4.5 4.5 0 1113.5 16h-8z"/>
+                    </svg>
+                    <h2 class="title-font font-medium text-3xl text-gray-900">33%</h2>
+                    <p class="leading-relaxed">Humidité</p>
+                </div>
+            </div>
+            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <svg class="text-indigo-500 w-12 h-12 mb-3 inline-block" fill="none" stroke="currentColor" stroke-linecap="round"
+                         stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                    <h2 class="title-font font-medium text-3xl text-gray-900">1024</h2>
+                    <p class="leading-relaxed">Pression</p>
+                </div>
+            </div>
+            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                <div class="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                    <svg class="text-indigo-500 w-12 h-12 mb-3 inline-block" fill="none" stroke="currentColor" stroke-linecap="round"
+                         stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round"
+                              stroke-linejoin="round"/>
+                    </svg>
+                    <h2 class="title-font font-medium text-3xl text-gray-900">510</h2>
+                    <p class="leading-relaxed">Luminosité</p>
+                </div>
+            </div>
+        </div>
+        <div class="aspect-w-16 aspect-h-9 flex mt-10 justify-center">
+            <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                    src="https://www.youtube.com/embed/5qap5aO4i9A"
+                    title="YouTube video player"></iframe>
+        </div>
+    </div>
+</section>
 </body>
 </html>
