@@ -88,20 +88,28 @@
 </html>
 
 <script>
-    fetch("http://127.0.0.1:1815/api/data", {
-        mode: 'cors',
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    })
-        .then(response => response.json())
-        .then(data => {
+    fetchdata()
+    myTimer()
 
-        console.log(data)
+    function fetchdata() {
+        fetch("http://192.168.1.16:1815/api/data", {
+            mode: 'cors',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+            .then(response => response.json())
+            .then(data => {
 
-            document.getElementById("temperature").innerHTML = data.data.temperature + "°C";
-            document.getElementById("humidity").innerHTML = data.data.humidity + "%";
-            document.getElementById("wind").innerHTML = data.data.wind + " km/h";
-            document.getElementById("luminosity").innerHTML = data.data.luminosity + " lx";
+                console.log(data)
+
+                document.getElementById("temperature").innerHTML = data.data.temperature + "°C";
+                document.getElementById("humidity").innerHTML = data.data.humidity + "%";
+                document.getElementById("wind").innerHTML = data.data.wind + " m/s";
+                document.getElementById("luminosity").innerHTML = data.data.luminosity + " lx";
             });
+    }
+    function myTimer() {
+        window.setInterval(fetchdata, 10000);
+    }
 </script>
